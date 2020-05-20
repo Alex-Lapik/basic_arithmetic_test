@@ -13,7 +13,7 @@ def main(numberOfQuestions=10, student_name=input()):
     for question_number in range(0, numberOfQuestions):  # Repeat x many times for number of questions
 
         numbers = sorted([random.randint(1, 10) for _ in range(0, 2)],
-                         reverse=True)  # Create an array with 2 random numbers for the quation
+                         reverse=True)  # Create an array with 2 random numbers for the equation
 
         operation = random.randint(0, 1)  # Create a random number, 0 == addition and 1 == subtraction
 
