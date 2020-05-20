@@ -7,7 +7,7 @@ Basic arithmetic test
 import random
 
 
-def main(numberOfQuestions=10, student_name=input()):
+def main(numberOfQuestions=10, studentName=input()):
     correct_answers = 0  # Keep track of correct answers
 
     for question_number in range(0, numberOfQuestions):  # Repeat x many times for number of questions
@@ -30,7 +30,7 @@ def main(numberOfQuestions=10, student_name=input()):
                 correct_answers += 1
 
     print(
-        ''.join(student_name + ', ' + str(correct_answers) + ' out of ' + str(numberOfQuestions)))  # Print test results
+        ''.join(studentName + ', ' + str(correct_answers) + ' out of ' + str(numberOfQuestions)))  # Print test results
 
     return correct_answers
 
