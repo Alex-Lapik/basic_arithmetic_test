@@ -13,8 +13,9 @@ def arithmetic_test(numberOfQuestions=10, studentName=input("Name: ")):
     # Repeat x many times for number of questions
     for _ in range(0, numberOfQuestions):
 
-        numbers = sorted([random.randint(1, 10) for _ in range(0, 2)],
-                         reverse=True)  # Create an array with 2 random numbers for the equation
+        # Create an array with 2 random numbers for the equation
+        numbers = sorted([random.randint(1, 10)
+                          for _ in range(0, 2)], reverse=True)
 
         # Generate a random number, 0 == addition and 1 == subtraction
         operation = random.randint(0, 1)
@@ -37,8 +38,8 @@ def arithmetic_test(numberOfQuestions=10, studentName=input("Name: ")):
         except ValueError:
             continue
 
-    print(
-        ''.join(studentName + ', ' + str(correct_answers) + ' out of ' + str(numberOfQuestions)))  # Print test results
+    print(''.join(studentName + ', ' + str(correct_answers) +
+                  ' out of ' + str(numberOfQuestions)))  # Print test results
 
     return correct_answers
 
