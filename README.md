@@ -1,2 +1,2 @@
-# basic_arithmetic_test
+# Basic Arithmetic Test
 Basic math test.
